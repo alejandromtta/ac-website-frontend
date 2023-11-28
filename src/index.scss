@@ -1,0 +1,11 @@
+/*Abstracts*/
+@use './scss/abstracts/mixins';
+@use './scss/abstracts/variables';
+
+/*Base*/
+@use './scss/base/base';
+@use './scss/base/resets';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

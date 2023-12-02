@@ -1,25 +1,55 @@
 .home {
-    @apply flex flex-col font-sans;
-    font-family: 'Inter', sans-serif;
-    margin-top: -9px;
+  @apply flex flex-col;
+  font-family: "Inter", sans-serif;
+  margin-top: -0.5625rem;
+  font-weight: 400;
 }
 
 .firstView {
-    @apply bg-cover;
-    background-image: url('../../assets/images/home-bg.svg');
-    height: 665px !important;
-    width: 100%;
+  @apply bg-cover;
+  background-image: url("../../assets/images/home-bg.svg");
+  height: 42.3rem !important;
+  width: 100%;
 }
+
 .secondView {
-    @apply text-center justify-center align-middle;
-    margin-top: 85px;
-    font-size: 35px;
+  @apply text-center justify-center align-middle;
+  margin-top: 5.3125rem;
+  font-size: 2.1875rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 70px;
+  &__title {
+    font-weight: 700;
+  }
 }
+
+.thirdView {
+  @apply flex flex-col text-center justify-center align-middle text-xl md:text-4xl;
+  height: 44.9rem !important;
+  background-color: #bad1e8;
+
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  &__descriptionContainer {
+    @apply flex justify-center align-middle;
+    width: 100% !important;
+
+  }
+  &__description {
+    @apply text-center md:text-left;
+    font-weight: 600;
+    width: 70%;
+  }
+}
+
 .homeFirstViewButton {
-    @apply text-white flex justify-center align-middle;
-    width: 125px;
-    height: 52px;
-    background-color: #F79646;
-    border-radius: 5px;
-    margin-top: 18px;
+  @apply text-white flex justify-center align-middle;
+  width: 7.8125rem;
+  height: 3.25rem;
+  background-color: #f79646;
+  border-radius: 0.3125rem;
+  margin-top: 1.125rem;
 }

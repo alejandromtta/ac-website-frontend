@@ -1,0 +1,25 @@
+.home {
+    @apply flex flex-col font-sans;
+    font-family: 'Inter', sans-serif;
+    margin-top: -9px;
+}
+
+.firstView {
+    @apply bg-cover;
+    background-image: url('../../assets/images/home-bg.svg');
+    height: 665px !important;
+    width: 100%;
+}
+.secondView {
+    @apply text-center justify-center align-middle;
+    margin-top: 85px;
+    font-size: 35px;
+}
+.homeFirstViewButton {
+    @apply text-white flex justify-center align-middle;
+    width: 125px;
+    height: 52px;
+    background-color: #F79646;
+    border-radius: 5px;
+    margin-top: 18px;
+}

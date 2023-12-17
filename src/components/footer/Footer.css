@@ -1,0 +1,6 @@
+.footer {
+  @apply text-white flex flex-col justify-center align-middle;
+  background-color: #003b73;
+  height: 183px;
+  width: 100%;
+}/*# sourceMappingURL=Footer.css.map */

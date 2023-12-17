@@ -1,14 +1,14 @@
-import React from "react";
 import "./Home.scss";
 import HomeCard from "../home-card/HomeCard";
 import { IHomeCard } from "../home-card";
 import { cardsInformation } from ".";
+
 const Home = () => {
   return (
     <div className="home">
       <div className="firstView">
         <div className="justify-start w-full mt-40 ml-2 md:w-608 md:ml-6">
-          <div className="text-xl text-left md:text-5xl">
+          <div className="text-2xl text-left md:text-5xl">
             <p className="text-white">
               En <span className="text-orange-400">seguridad</span> no hay
               atajos; cero riesgos,
@@ -18,14 +18,25 @@ const Home = () => {
           </div>
           <div className="text-lg text-left text-white mt-11">
             <p>
-              Bienvenidos a nuestra compañía; somos una entidad especializada en
-              capacitación de entrenamiento en protección contra caídas para
-              trabajo seguro en alturas,{" "}
+              AC ALTURAS Y CONFINADOS, los recibe con las manos abiertas,
+              estamos para acompañarte y brindarte mayor asesoria en el proceso
+              de capacitacion para trabajo seguro en alturas.{" "}
             </p>
           </div>
           <div className="justify-start homeFirstViewButton">
-            <button>Vamos!</button>
+            <button>Inscribete</button>
           </div>
+        </div>
+      </div>
+      <div className="thirdView">
+        <p className="thirdView__title">Bienvenido!</p>
+        <div className="thirdView__descriptionContainer">
+          <p className="thirdView__description">
+            Somos una entidad especializada en capacitación de entrenamiento en
+            protección contra caídas para trabajo seguro en alturas, dedicados a
+            todas actividades relacionadas con el Sistema de Gestión de la
+            Seguridad y Salud en el Trabajo.
+          </p>
         </div>
       </div>
       <div className="secondView">
@@ -44,17 +55,6 @@ const Home = () => {
               />
             )
           )}
-        </div>
-      </div>
-      <div className="thirdView">
-        <p className="thirdView__title">Bienvenido!</p>
-        <div className="thirdView__descriptionContainer">
-          <p className="thirdView__description">
-            Somos una entidad especializada en capacitación de entrenamiento en
-            protección contra caídas para trabajo seguro en alturas, dedicados a
-            todas actividades relacionadas con el Sistema de Gestión de la
-            Seguridad y Salud en el Trabajo.
-          </p>
         </div>
       </div>
     </div>

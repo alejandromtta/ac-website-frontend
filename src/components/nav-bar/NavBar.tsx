@@ -16,12 +16,11 @@ const NavBar: REACT.FC = () => {
         className="bg-primary"
       >
         <Container>
-          <Navbar.Brand href="#home">ALTURAS Y CONFINADOS SAS</Navbar.Brand>
+          <Navbar.Brand href="/">ALTURAS Y CONFINADOS SAS</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Inicio</Nav.Link>
-              <Nav.Link href="#pricing">Validar Certificado</Nav.Link>
+              <Nav.Link href="/">Inicio</Nav.Link>
               <NavDropdown
                 title="Productos y Servicios"
                 id="collapsible-nav-dropdown"
@@ -38,6 +37,7 @@ const NavBar: REACT.FC = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="validate-certified">Validar Certificado</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

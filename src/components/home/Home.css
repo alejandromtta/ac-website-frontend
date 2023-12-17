@@ -14,36 +14,32 @@
 
 .secondView {
   @apply text-center justify-center align-middle;
-
   margin-top: 5.3125rem;
   font-size: 2.1875rem;
   font-family: "Inter", sans-serif;
   margin-bottom: 89px;
-  &__title {
-    font-weight: 700;
-  }
+}
+.secondView__title {
+  font-weight: 700;
 }
 
 .thirdView {
   @apply flex flex-col text-center justify-center align-middle text-xl md:text-4xl;
   height: 44.9rem !important;
   background-color: #bad1e8;
-
-
-  &__title {
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
-  &__descriptionContainer {
-    @apply flex justify-center align-middle;
-    width: 100% !important;
-
-  }
-  &__description {
-    @apply text-center md:text-left;
-    font-weight: 600;
-    width: 70%;
-  }
+}
+.thirdView__title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.thirdView__descriptionContainer {
+  @apply flex justify-center align-middle;
+  width: 100% !important;
+}
+.thirdView__description {
+  @apply text-center md:text-left;
+  font-weight: 600;
+  width: 70%;
 }
 
 .homeFirstViewButton {
@@ -53,4 +49,4 @@
   background-color: #f79646;
   border-radius: 0.3125rem;
   margin-top: 1.125rem;
-}
+}/*# sourceMappingURL=Home.css.map */

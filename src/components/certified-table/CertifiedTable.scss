@@ -1,10 +1,10 @@
 .container_certified {
+  @apply p-4 md:pl-20 md:pt-10 md:pr-20;
     display: flex;
     flex-direction: column;
     font-family: "Calibri";
     justify-content: center;
-    padding: 2rem 5rem;
-
+ 
     table {
         border-spacing: 0;
         border: 1px solid #d1cccc;

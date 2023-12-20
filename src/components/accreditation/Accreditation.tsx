@@ -55,7 +55,7 @@ const Accreditation = () => {
             </>
           ) : (
             <>
-              <p className="mt-10 mb-20">Resolución No.10240</p>
+              <p>Resolución No.10240</p>
               <iframe
                 className="h-96 md:h-900 accreditation"
                 title="direccionSST-43047-10-20231117095651"

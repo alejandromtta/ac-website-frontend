@@ -1,7 +1,7 @@
 import REACT from "react";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";
-import twitter from "../../assets/images/twitter.svg";
+import maps from "../../assets/images/maps.png";
 import "./Footer.scss";
 const Footer: REACT.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Footer: REACT.FC = () => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://www.facebook.com/profile.php?id=61553915856935"
+          href="https://www.instagram.com/acalturasyconfinados/?hl=es"
         >
           {" "}
           <img
@@ -34,13 +34,13 @@ const Footer: REACT.FC = () => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://www.facebook.com/profile.php?id=61553915856935"
+          href="https://maps.app.goo.gl/9YFvBcUezQzUiYgaA"
         >
           {" "}
           <img
             className="h-7 w-7"
             alt="alturas y confinados ubicacion"
-            src={twitter}
+            src={maps}
           />
         </a>
       </div>

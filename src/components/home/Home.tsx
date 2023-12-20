@@ -24,7 +24,11 @@ const Home = () => {
             </p>
           </div>
           <div className="justify-start homeFirstViewButton">
-            <button>Inscribete</button>
+          <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://maps.app.goo.gl/9YFvBcUezQzUiYgaA"
+        > <button className="flex flex-col justify-center m-auto mt-3 text-center align-middle">Inscribete</button> </a>
           </div>
         </div>
       </div>
@@ -32,7 +36,7 @@ const Home = () => {
         <p className="thirdView__title">Bienvenido!</p>
         <div className="thirdView__descriptionContainer">
           <p className="thirdView__description">
-            Somos una entidad especializada en capacitación de entrenamiento en
+            Somos una entidad especializada en formacion y entrenamiento en
             protección contra caídas para trabajo seguro en alturas, dedicados a
             todas actividades relacionadas con el Sistema de Gestión de la
             Seguridad y Salud en el Trabajo.

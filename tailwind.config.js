@@ -5,10 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    width: {
-      '608': '648px' // 605px,
-    },
+    extend: {
+      borderColor:{
+        orange: '#f79646'
+      },
+      height: {
+        '900': '900px'
+      },
+      width: {
+        '608': '648px' // 605px,
+      },
+     },
+   
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

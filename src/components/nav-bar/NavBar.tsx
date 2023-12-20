@@ -3,6 +3,7 @@ import REACT from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import acIcon from "../../assets/images/ac-icon.png"
 import "./NavBar.scss";
 
 const NavBar: REACT.FC = () => {
@@ -16,7 +17,7 @@ const NavBar: REACT.FC = () => {
         className="bg-primary"
       >
         <Container>
-          <Navbar.Brand href="/">ALTURAS Y CONFINADOS SAS</Navbar.Brand>
+          <Navbar.Brand className="flex flex-row" href="/"><img className="h-8 w-17"alt="ac sas" src={acIcon}/> Alturas y Confinados</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -25,9 +26,9 @@ const NavBar: REACT.FC = () => {
                 title="Productos y Servicios"
                 id="collapsible-nav-dropdown"
               >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Trabajo en Alturas</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
+                Documentaciòn e implementaciòn SG_SST
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
                   Something
@@ -38,6 +39,7 @@ const NavBar: REACT.FC = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="validate-certified">Validar Certificado</Nav.Link>
+              <Nav.Link href="accreditation">Acreditacion</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

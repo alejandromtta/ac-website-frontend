@@ -1,0 +1,12 @@
+.accreditation{
+    @apply flex justify-center align-middle;
+    width: 700px !important;
+
+    .scribd{
+        height: 900px !important;
+    }
+    .toolbar_top{
+        @apply hidden;
+    }
+}
+

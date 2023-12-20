@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import {  RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ValidateCertified from './components/validate-certified/ValidateCertified';
+import Accreditation from './components/accreditation/Accreditation';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,10 @@ function App() {
       path: "/validate-certified",
       element: <ValidateCertified />,
     },
+    {
+      path: "/accreditation",
+      element: <Accreditation/>,
+    }
   ], { basename: "/",});
   return (
     

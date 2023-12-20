@@ -38,7 +38,7 @@ const Accreditation = () => {
           Ministerio
           </Button>
         </div>
-        <div className="flex flex-col justify-center mb-20 ml-20 mr-20 align-middle ">
+        <div className="flex flex-col justify-center mt-10 mb-20 align-middle ">
           {doc === "Norm" ? (
             <>
               {" "}
@@ -55,7 +55,7 @@ const Accreditation = () => {
             </>
           ) : (
             <>
-              <p className="mt-10 ">Resolución No.10240</p>
+              <p className="mt-10 mb-20">Resolución No.10240</p>
               <iframe
                 className="h-96 md:h-900 accreditation"
                 title="direccionSST-43047-10-20231117095651"

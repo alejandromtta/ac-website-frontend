@@ -34,36 +34,42 @@ const Accreditation = () => {
           >
             Resolución
           </Button>
+          <Button
+            onClick={(e) => setDoc("Tec")}
+            className="w-40 h-10 bg-primary"
+            variant="primary"
+          >
+            Norma Tecnica
+          </Button>
+
           <Button disabled className="w-40 h-10 bg-primary" variant="primary">
-          Ministerio
+            Ministerio
           </Button>
         </div>
         <div className="flex flex-col justify-center mt-10 mb-20 align-middle ">
           {doc === "Norm" ? (
-            <>
-              {" "}
-              <p className="scribd">
-              Centros de Formación y Entrenamiento en Protección Contra Caidas
-              </p>
-              <iframe
-                className="h-96 md:h-900"
-                title="NTC6072.Doc Centros de Formación y Entrenamiento en Proteccion Contra Caidas"
-                src="https://es.scribd.com/embeds/693184096/content?start_page=1&view_mode=scroll&access_key=key-8sj9ok5GjPTfI6DYLs6z"
-                scrolling="no"
-                id="doc_65826"
-              />
-            </>
+            <iframe
+              className="w-8/12 h-96 md:h-900 accreditation"
+              title="direccionSST-43047-10-20231117095651"
+              src="https://es.scribd.com/embeds/693191153/content?start_page=1&view_mode=scroll&access_key=key-80lSBRx8cr0MhhJxgf82"
+              scrolling="no"
+              id="doc_20776"
+            />
+          ) : doc === "Resolution" ? (
+            <iframe
+              className="h-96 md:h-900 accreditation"
+              title="DOC-20231127-WA0037."
+              src="https://es.scribd.com/embeds/693894416/content?start_page=1&view_mode=scroll&access_key=key-3ZjwaDdRgurUyfR14ZYd"
+              scrolling="no"
+            />
           ) : (
-            <>
-              <p>Resolución No.10240</p>
-              <iframe
-                className="h-96 md:h-900 accreditation"
-                title="direccionSST-43047-10-20231117095651"
-                src="https://es.scribd.com/embeds/693191153/content?start_page=1&view_mode=scroll&access_key=key-80lSBRx8cr0MhhJxgf82"
-                scrolling="no"
-                id="doc_20776"
-              ></iframe>
-            </>
+            <iframe
+              className="h-96 md:h-900"
+              title="NTC6072.Doc Centros de Formación y Entrenamiento en Proteccion Contra Caidas"
+              src="https://es.scribd.com/embeds/693184096/content?start_page=1&view_mode=scroll&access_key=key-8sj9ok5GjPTfI6DYLs6z"
+              scrolling="no"
+              id="doc_65826"
+            />
           )}
         </div>
       </div>

@@ -56,8 +56,7 @@ const Accreditation = () => {
           ) : (
             <>
               <p className="mt-10 ">
-                direccionSST-43047-10-20231117095651 by Alejandro Motta on
-                Scribd
+                Resolucion No.10240
               </p>
               <iframe
                 className="h-96 md:h-900 accreditation"

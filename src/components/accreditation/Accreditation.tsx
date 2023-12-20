@@ -49,7 +49,7 @@ const Accreditation = () => {
         <div className="flex flex-col justify-center mt-10 mb-20 align-middle ">
           {doc === "Norm" ? (
             <iframe
-              className="w-8/12 h-96 md:h-900 accreditation"
+              className="h-96 md:h-900 accreditation"
               title="direccionSST-43047-10-20231117095651"
               src="https://es.scribd.com/embeds/693191153/content?start_page=1&view_mode=scroll&access_key=key-80lSBRx8cr0MhhJxgf82"
               scrolling="no"

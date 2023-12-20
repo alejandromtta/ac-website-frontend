@@ -18,9 +18,7 @@ const Home = () => {
           </div>
           <div className="text-lg text-left text-white mt-11">
             <p>
-              AC ALTURAS Y CONFINADOS, los recibe con las manos abiertas,
-              estamos para acompañarte y brindarte mayor asesoria en el proceso
-              de capacitacion para trabajo seguro en alturas.{" "}
+            AC ALTURAS Y CONFINADOS, los recibe con las manos abiertas, estamos para acompañarte y brindarte mayor asesoría en el proceso de capacitación para trabajo seguro en alturas.{" "}
             </p>
           </div>
           <div className="justify-start homeFirstViewButton">
@@ -36,10 +34,7 @@ const Home = () => {
         <p className="thirdView__title">Bienvenido!</p>
         <div className="thirdView__descriptionContainer">
           <p className="thirdView__description">
-            Somos una entidad especializada en formacion y entrenamiento en
-            protección contra caídas para trabajo seguro en alturas, dedicados a
-            todas actividades relacionadas con el Sistema de Gestión de la
-            Seguridad y Salud en el Trabajo.
+          Somos una entidad especializada en formación y entrenamiento en protección contra caídas para trabajo seguro en alturas, dedicados a todas actividades relacionadas con el Sistema de Gestión de la Seguridad y Salud en el Trabajo.
           </p>
         </div>
       </div>

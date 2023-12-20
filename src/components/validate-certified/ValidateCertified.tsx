@@ -24,9 +24,7 @@ export default function ValidateCertified() {
       <div className="flex justify-center mt-5 mb-4 text-center align-middle">
         <p>
           {" "}
-          Desde esta pantalla podras verificar tus certificados mediante tu
-          numero de documento, digitandolo en el buscador, donde veras fecha,
-          id, empresa y nivel.
+          Desde esta pantalla podrás verificar tus certificados mediante tu numero de documento, digitando lo en el buscador, donde veras la fecha, id, empresa y nivel.
         </p>
       </div>
       <Form

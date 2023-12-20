@@ -11,11 +11,11 @@ const Accreditation = () => {
       </div>
       <div className="flex flex-col justify-center text-center align-middle">
         <p className="mt-5 ml-10 mr-10 md:ml-20 md:mr-20">
-          Pensando en el bienestar de nuestros trabajadores capacitados y con el
-          fin de prestar un mejor servicio ponemos a su disposicion nuesros
+          Pensando en el bienestar de nuestros trabajadores capacitado y con el
+          fin de prestar un mejor servicio ponemos a su disposición nuestros
           documentos legales que nos acreditan el cumplimiento por parte de la
-          compañia en las normas NTC 6072, ministerio de trabajo como ente
-          reguklar de los cursos de espacios confinados y alturas, resolucion
+          compañía en las normas NTC 6072, ministerio de trabajo como ente
+          regulador de los cursos de espacios confinados y alturas, resolución
           4272 de 2021, licencia de seguridad y salud en el trabajo emitida por
           la secretaria de salud.
         </p>
@@ -25,17 +25,17 @@ const Accreditation = () => {
             className="w-40 h-10 bg-primary"
             variant="primary"
           >
-            Norma Tecnica
+            Licencia SST
           </Button>
           <Button
             onClick={(e) => setDoc("Resolution")}
             className="w-40 h-10 bg-primary"
             variant="primary"
           >
-            Resolucion
+            Resolución
           </Button>
           <Button disabled className="w-40 h-10 bg-primary" variant="primary">
-            Acreditacion
+          Ministerio
           </Button>
         </div>
         <div className="flex flex-col justify-center mb-20 ml-20 mr-20 align-middle ">
@@ -43,7 +43,7 @@ const Accreditation = () => {
             <>
               {" "}
               <p className="scribd">
-                Centros de Formación y Entrenamiento en Proteccion Contra Caidas
+              Centros de Formación y Entrenamiento en Protección Contra Caidas
               </p>
               <iframe
                 className="h-96 md:h-900"
@@ -55,9 +55,7 @@ const Accreditation = () => {
             </>
           ) : (
             <>
-              <p className="mt-10 ">
-                Resolucion No.10240
-              </p>
+              <p className="mt-10 ">Resolución No.10240</p>
               <iframe
                 className="h-96 md:h-900 accreditation"
                 title="direccionSST-43047-10-20231117095651"

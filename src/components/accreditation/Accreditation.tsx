@@ -39,7 +39,7 @@ const Accreditation = () => {
             className="w-40 h-10 bg-primary"
             variant="primary"
           >
-            Norma Tecnica
+            Norma Técnica
           </Button>
 
           <Button disabled className="w-40 h-10 bg-primary" variant="primary">

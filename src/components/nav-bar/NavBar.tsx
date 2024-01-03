@@ -2,11 +2,14 @@ import Container from "react-bootstrap/Container";
 import REACT from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-//import NavDropdown from "react-bootstrap/NavDropdown";
-import acIcon from "../../assets/images/ac-icon.png"
+import acIcon from "../../assets/images/ac-icon.png";
 import "./NavBar.scss";
+import { NavDropdown } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 
 const NavBar: REACT.FC = () => {
+  const { pathname } = useLocation();
+
   return (
     <div className="navBar">
       <Navbar
@@ -17,29 +20,75 @@ const NavBar: REACT.FC = () => {
         className="bg-primary"
       >
         <Container>
-          <Navbar.Brand className="flex flex-row" href="/"><img className="h-8 w-17"alt="ac sas" src={acIcon}/> Alturas y Confinados</Navbar.Brand>
+          <Navbar.Brand className="flex flex-row" href="/">
+            <img className="h-8 w-17" alt="ac sas" src={acIcon} /> Alturas y
+            Confinados
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Inicio</Nav.Link>
-              {/* <NavDropdown
+              <NavDropdown
                 title="Productos y Servicios"
                 id="collapsible-nav-dropdown"
               >
-                <NavDropdown.Item href="#action/3.1">Trabajo en Alturas</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                Documentaciòn e implementaciòn SG_SST
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
+                      ? "WORKINGUP"
+                      : "products/WORKINGUP"
+                  }`}
+                >
+                  Trabajo en Alturas
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
+                      ? "DOCUMENTATION"
+                      : "products/DOCUMENTATION"
+                  }`}
+                >
+                  Documentaciòn e implementaciòn SG_SST
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products") ? "AUDIT" : "products/AUDIT"
+                  }`}
+                >
+                  Auditoria de Seguimiento
                 </NavDropdown.Item>
-              </NavDropdown> */}
-              <Nav.Link href="validate-certified">Validar Certificado</Nav.Link>
-              <Nav.Link href="accreditation">Acreditacion</Nav.Link>
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
+                      ? "VERTICAL"
+                      : "products/VERTICAL"
+                  }`}
+                >
+                  Rescate vertical
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
+                      ? "SCAFFOLDING"
+                      : "products/SCAFFOLDING"
+                  }`}
+                >
+                  Armador de andamios
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
+                      ? "SECURITY"
+                      : "products/SECURITY"
+                  }`}
+                >
+                  Equipos de Seguridad
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="/validate-certified">
+                Validar Certificado
+              </Nav.Link>
+              <Nav.Link href="/accreditation">Acreditacion</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

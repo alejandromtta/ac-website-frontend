@@ -1,0 +1,52 @@
+.home {
+  @apply flex flex-col;
+  font-family: "Inter", sans-serif;
+  margin-top: -0.5625rem;
+  font-weight: 400;
+}
+
+.firstView {
+  @apply bg-cover pl-8 pr-4 md:p-0;
+  background-image: url("../../assets/images/home-bg.svg");
+  height: 42.3rem !important;
+  width: 100%;
+}
+
+.secondView {
+  @apply text-center justify-center align-middle;
+  margin-top: 5.3125rem;
+  font-size: 2.1875rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 89px;
+}
+.secondView__title {
+  font-weight: 700;
+}
+
+.thirdView {
+  @apply flex flex-col text-center justify-center align-middle text-xl md:text-4xl;
+  height: 44.9rem !important;
+  background-color: #bad1e8;
+}
+.thirdView__title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.thirdView__descriptionContainer {
+  @apply flex justify-center align-middle;
+  width: 100% !important;
+}
+.thirdView__description {
+  @apply text-center md:text-left;
+  font-weight: 600;
+  width: 70%;
+}
+
+.homeFirstViewButton {
+  @apply text-white flex justify-center align-middle;
+  width: 7.8125rem;
+  height: 3.25rem;
+  background-color: #f79646;
+  border-radius: 0.3125rem;
+  margin-top: 1.125rem;
+}/*# sourceMappingURL=Home.css.map */

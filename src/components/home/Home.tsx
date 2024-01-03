@@ -2,6 +2,7 @@ import "./Home.scss";
 import HomeCard from "../home-card/HomeCard";
 import { IHomeCard } from "../home-card";
 import { cardsInformation } from ".";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -46,12 +47,12 @@ const Home = () => {
         <div className="flex flex-col justify-center mt-40 ml-5 space-y-10 align-middle md:space-y-0 md:mr-0 md:space-x-10 md:flex-row">
           {cardsInformation.map(
             ({ icon, title, description, id }: IHomeCard) => (
-              <HomeCard
+              <Link to="/products"> <HomeCard
                 icon={icon}
                 title={title}
                 description={description}
                 id={id}
-              />
+              /> </Link>
             )
           )}
         </div>

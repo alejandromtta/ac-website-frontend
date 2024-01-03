@@ -1,0 +1,10 @@
+.accreditation {
+  @apply flex justify-center align-middle;
+  width: 700px !important;
+}
+.accreditation .scribd {
+  height: 900px !important;
+}
+.accreditation .toolbar_top {
+  @apply hidden;
+}/*# sourceMappingURL=Accreditation.module.css.map */

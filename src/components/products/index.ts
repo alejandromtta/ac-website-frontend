@@ -73,7 +73,7 @@ export const products: any = {
 export const services: IServices = {
   CORDINATOR: {
     name: "Coordinador \n de trabajo en alturas",
-    description: `Descripcion: Este nivel está dirigido para el personal profesional, tecnico, tecnologo o persona capacitada que dentro del perfil de funciones se encuentre garantizar la seguridad de los trabajadores que se exponen a riesgos de caída, idenfificacion de peligros en el sitio en donde se realiza el trabajo, control de riesgos de trabajo en alturas en los sistemas y protocolos que respaldan la seguridad y el bienestar del mismo.`,
+    description: `Este nivel está dirigido para el personal profesional, tecnico, tecnologo o persona capacitada que dentro del perfil de funciones se encuentre garantizar la seguridad de los trabajadores que se exponen a riesgos de caída, idenfificacion de peligros en el sitio en donde se realiza el trabajo, control de riesgos de trabajo en alturas en los sistemas y protocolos que respaldan la seguridad y el bienestar del mismo.`,
     alt: "",
     src_icon: serviceIcon,
     src: "",
@@ -82,7 +82,7 @@ export const services: IServices = {
   AUTHORIZED: {
     name: "Trabajador Autorizado",
     description:
-      "Descripcion: Este nivel va dirigo para todo aquel trabajador que realice labores en altura con riesgo de caída mayor a 2.0 metros, con relacion al plano de los pies del trabajador al plano horizontal inferior mas cercano a èl, que realice desplazamientos horizontales y/o verticales por las estructuras de acuerdo con la necesidad.",
+      "Este nivel va dirigo para todo aquel trabajador que realice labores en altura con riesgo de caída mayor a 2.0 metros, con relacion al plano de los pies del trabajador al plano horizontal inferior mas cercano a èl, que realice desplazamientos horizontales y/o verticales por las estructuras de acuerdo con la necesidad.",
     alt: "",
     src_icon: serviceIcon,
     src: "",

@@ -6,31 +6,31 @@
 }
 
 .firstView {
-  @apply bg-cover pl-8 pr-4 md:p-0;
+  @apply pl-8 pr-4 bg-cover md:p-0;
   background-image: url("../../assets/images/home-bg.svg");
   height: 42.3rem !important;
   width: 100%;
 }
 
 .secondView {
-  @apply text-center justify-center align-middle;
+  @apply justify-center text-center align-middle;
   margin-top: 5.3125rem;
   font-size: 2.1875rem;
   font-family: "Inter", sans-serif;
-  margin-bottom: 89px;
+  margin-bottom: 5.5625rem;
 }
 .secondView__title {
   font-weight: 700;
 }
 
 .thirdView {
-  @apply flex flex-col text-center justify-center align-middle text-xl md:text-4xl;
+  @apply flex flex-col justify-center text-xl text-center align-middle md:text-4xl;
   height: 44.9rem !important;
   background-color: #bad1e8;
 }
 .thirdView__title {
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 .thirdView__descriptionContainer {
   @apply flex justify-center align-middle;
@@ -43,7 +43,7 @@
 }
 
 .homeFirstViewButton {
-  @apply text-white flex justify-center align-middle;
+  @apply flex justify-center text-white align-middle;
   width: 7.8125rem;
   height: 3.25rem;
   background-color: #f79646;

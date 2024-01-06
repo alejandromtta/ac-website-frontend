@@ -1,9 +1,9 @@
 .accreditation {
   @apply flex justify-center align-middle;
-  width: 700px !important;
+  width: 43.75rem !important;
 }
 .accreditation .scribd {
-  height: 900px !important;
+  height: 56.25rem !important;
 }
 .accreditation .toolbar_top {
   @apply hidden;

@@ -2,7 +2,6 @@ import "./Home.scss";
 import HomeCard from "../home-card/HomeCard";
 import { IHomeCard } from "../home-card";
 import { cardsInformation } from ".";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (

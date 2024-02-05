@@ -31,7 +31,7 @@ const Home = () => {
             >
               {" "}
               <button className="flex flex-col justify-center m-auto mt-3 text-center align-middle">
-                Inscribete
+              Escríbenos
               </button>{" "}
             </a>
           </div>

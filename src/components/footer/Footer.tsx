@@ -47,7 +47,7 @@ const Footer: REACT.FC = () => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://wa.me/qr/F4IMZEGNBQPUE1"
+          href="Https://wa.me/573134838642"
         >
           {" "}
           <img

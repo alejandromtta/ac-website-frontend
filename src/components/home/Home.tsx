@@ -27,7 +27,7 @@ const Home = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://wa.me/qr/F4IMZEGNBQPUE1"
+              href="Https://wa.me/573134838642"
             >
               {" "}
               <button className="flex flex-col justify-center m-auto mt-3 text-center align-middle">

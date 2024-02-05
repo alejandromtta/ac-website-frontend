@@ -2,6 +2,7 @@ import REACT from "react";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";
 import maps from "../../assets/images/maps.png";
+import whatsapp from "../../assets/images/whatsapp.svg";
 import "./Footer.scss";
 const Footer: REACT.FC = () => {
   return (
@@ -34,13 +35,25 @@ const Footer: REACT.FC = () => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://maps.app.goo.gl/9YFvBcUezQzUiYgaA"
+          href="https://maps.app.goo.gl/hdMLDU8CQ38Z6yAi9"
         >
           {" "}
           <img
             className="h-7 w-7"
             alt="alturas y confinados ubicacion"
             src={maps}
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://wa.me/qr/F4IMZEGNBQPUE1"
+        >
+          {" "}
+          <img
+            className="h-7 w-7"
+            alt="alturas y confinados ubicacion"
+            src={whatsapp}
           />
         </a>
       </div>

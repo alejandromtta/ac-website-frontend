@@ -27,7 +27,7 @@ const Home = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://maps.app.goo.gl/9YFvBcUezQzUiYgaA"
+              href="https://wa.me/qr/F4IMZEGNBQPUE1"
             >
               {" "}
               <button className="flex flex-col justify-center m-auto mt-3 text-center align-middle">

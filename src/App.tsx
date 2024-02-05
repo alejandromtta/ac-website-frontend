@@ -8,6 +8,7 @@ import {  RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ValidateCertified from './components/validate-certified/ValidateCertified';
 import Accreditation from './components/accreditation/Accreditation';
 import Products from './components/products/Products';
+import { AboutUs } from './components/about-us';
 
 function App() {
   createContext('/')
@@ -27,6 +28,10 @@ function App() {
     {
       path: "/products/:id",
       element: <><NavBar/> <Products /></>,
+    },
+    {
+      path: "/aboutus",
+      element: <><NavBar/> <AboutUs /></>,
     },
   ], { basename: "/",});
   return (

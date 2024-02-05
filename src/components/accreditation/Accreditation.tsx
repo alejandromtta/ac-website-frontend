@@ -41,28 +41,83 @@ const Accreditation = () => {
           >
             Norma Técnica
           </Button>
-
+          <Button
+            onClick={(e) => setDoc("Quality")}
+            className="w-40 h-10 bg-primary"
+            variant="primary"
+          >
+            Certf. Calidad
+          </Button>
           <Button disabled className="w-40 h-10 bg-primary" variant="primary">
             Ministerio
           </Button>
         </div>
         <div className="flex flex-col justify-center mt-10 mb-20 align-middle ">
           {doc === "Norm" ? (
-            <iframe
-              className="h-96 md:h-900 accreditation"
-              title="direccionSST-43047-10-20231117095651"
-              src="https://es.scribd.com/embeds/693191153/content?start_page=1&view_mode=scroll&access_key=key-80lSBRx8cr0MhhJxgf82"
-              scrolling="no"
-              id="doc_20776"
-            />
+            <>
+              {" "}
+              <Button
+                className="w-32 h-10 ml-4 bg-primary"
+                variant="primary"
+                target="_blank"
+                href="https://drive.google.com/file/d/1TaMlE0Jwh44ljwqa8slDfR5QSzajW_Cy/view?usp=drive_link"
+              >
+                Descargar
+              </Button>
+              <iframe
+                className="h-96 md:h-900 accreditation"
+                title="Licencia Ac Alturas y Confinados"
+                src="https://es.scribd.com/embeds/703811965/content?start_page=1&view_mode=scroll&access_key=key-DMhUZL77RgyX1GaLO1I7"
+                scrolling="no"
+              />
+            </>
           ) : doc === "Resolution" ? (
+            <>
+            {" "}
+            <Button
+              className="w-32 h-10 ml-4 bg-primary"
+              variant="primary"
+              target="_blank"
+              href="https://drive.google.com/file/d/1Ipb6VP0qdNeD7UCr6LaACurSmmiEOEHh/view?usp=sharing"
+            >
+              Descargar
+            </Button>
             <iframe
               className="h-96 md:h-900 accreditation"
               title="DOC-20231127-WA0037."
               src="https://es.scribd.com/embeds/693894416/content?start_page=1&view_mode=scroll&access_key=key-3ZjwaDdRgurUyfR14ZYd"
               scrolling="no"
             />
+                   </>
+          ) : doc === "Quality" ? (
+            <>
+            {" "}
+            <Button
+              className="w-32 h-10 ml-4 bg-primary"
+              variant="primary"
+              target="_blank"
+              href="https://drive.google.com/file/d/1LBpW-r-uNoly_EiXjq89xMEx1ZOTPYez/view?usp=sharing"
+            >
+              Descargar
+            </Button>
+              <iframe
+                 className="h-96 md:h-900 accreditation"
+                title="Ac Alturas y Confinados Sociedad Por Acciones Simplificada"
+                src="https://es.scribd.com/embeds/703813791/content?start_page=1&view_mode=scroll&access_key=key-vv4aSDdDeNbM6Up0Q1oP"
+                scrolling="no"
+              />
+            </>
           ) : (
+            <>
+            {" "}
+            <Button
+              className="w-32 h-10 ml-4 bg-primary"
+              variant="primary"
+              target="_blank"
+              href="https://drive.google.com/file/d/1lEdAOGdwKsD0iRcxm1d8UFyfr8BZ4jQ7/view?usp=sharing"
+            >
+              Descargar
+            </Button>
             <iframe
               className="h-96 md:h-900"
               title="NTC6072.Doc Centros de Formación y Entrenamiento en Proteccion Contra Caidas"
@@ -70,6 +125,7 @@ const Accreditation = () => {
               scrolling="no"
               id="doc_65826"
             />
+            </>
           )}
         </div>
       </div>

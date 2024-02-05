@@ -89,6 +89,7 @@ const NavBar: REACT.FC = () => {
                 Validar Certificado
               </Nav.Link>
               <Nav.Link href="/accreditation">Acreditacion</Nav.Link>
+              <Nav.Link href="/aboutus">Sobre Nosotros</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

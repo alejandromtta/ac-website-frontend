@@ -60,8 +60,7 @@ const Footer: REACT.FC = () => {
       <p className="flex flex-col justify-center mt-4 text-center break-words align-middle ">
         Calle 75 bis Nº 85 – 42 Bogota D.C. - acalturasyconfinadossas@gmail.com{" "}
         <br />
-        +57 3204865819 -
-        +57 3173601009
+        +57 3134838642
         <span className="text-xs">2023 Alturas y Confinados SAS</span>
       </p>
     </div>

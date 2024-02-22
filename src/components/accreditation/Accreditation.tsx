@@ -123,7 +123,7 @@ const Accreditation = () => {
                 Descargar
               </Button>
               <iframe
-                className="w-32 h-10 ml-4 bg-primary"
+                className="h-96 md:h-900"
                 title="72.Oficio de Ministerio de Trabajo"
                 src="https://es.scribd.com/embeds/707495888/content?start_page=1&view_mode=scroll&access_key=key-Llj1a8YGA9Eu2x1qwXLN"
                 scrolling="no"

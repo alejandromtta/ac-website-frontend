@@ -48,7 +48,12 @@ const Accreditation = () => {
           >
             Certf. Calidad
           </Button>
-          <Button disabled className="w-40 h-10 bg-primary" variant="primary">
+          <Button
+            onClick={(e) => setDoc("Min")}
+            disabled
+            className="w-40 h-10 bg-primary"
+            variant="primary"
+          >
             Ministerio
           </Button>
         </div>
@@ -73,58 +78,77 @@ const Accreditation = () => {
             </>
           ) : doc === "Resolution" ? (
             <>
-            {" "}
-            <Button
-              className="w-32 h-10 ml-4 bg-primary"
-              variant="primary"
-              target="_blank"
-              href="https://drive.google.com/file/d/1Ipb6VP0qdNeD7UCr6LaACurSmmiEOEHh/view?usp=sharing"
-            >
-              Descargar
-            </Button>
-            <iframe
-              className="h-96 md:h-900 accreditation"
-              title="DOC-20231127-WA0037."
-              src="https://es.scribd.com/embeds/693894416/content?start_page=1&view_mode=scroll&access_key=key-3ZjwaDdRgurUyfR14ZYd"
-              scrolling="no"
-            />
-                   </>
+              {" "}
+              <Button
+                className="w-32 h-10 ml-4 bg-primary"
+                variant="primary"
+                target="_blank"
+                href="https://drive.google.com/file/d/1Ipb6VP0qdNeD7UCr6LaACurSmmiEOEHh/view?usp=sharing"
+              >
+                Descargar
+              </Button>
+              <iframe
+                className="h-96 md:h-900 accreditation"
+                title="DOC-20231127-WA0037."
+                src="https://es.scribd.com/embeds/693894416/content?start_page=1&view_mode=scroll&access_key=key-3ZjwaDdRgurUyfR14ZYd"
+                scrolling="no"
+              />
+            </>
           ) : doc === "Quality" ? (
             <>
-            {" "}
-            <Button
-              className="w-32 h-10 ml-4 bg-primary"
-              variant="primary"
-              target="_blank"
-              href="https://drive.google.com/file/d/1LBpW-r-uNoly_EiXjq89xMEx1ZOTPYez/view?usp=sharing"
-            >
-              Descargar
-            </Button>
+              {" "}
+              <Button
+                className="w-32 h-10 ml-4 bg-primary"
+                variant="primary"
+                target="_blank"
+                href="https://drive.google.com/file/d/1LBpW-r-uNoly_EiXjq89xMEx1ZOTPYez/view?usp=sharing"
+              >
+                Descargar
+              </Button>
               <iframe
-                 className="h-96 md:h-900 accreditation"
+                className="h-96 md:h-900 accreditation"
                 title="Ac Alturas y Confinados Sociedad Por Acciones Simplificada"
                 src="https://es.scribd.com/embeds/703813791/content?start_page=1&view_mode=scroll&access_key=key-vv4aSDdDeNbM6Up0Q1oP"
                 scrolling="no"
               />
             </>
+          ) : doc === "Min" ? (
+            <>
+              {" "}
+              <Button
+                className="w-32 h-10 ml-4 bg-primary"
+                variant="primary"
+                target="_blank"
+                href="https://drive.google.com/file/d/193cYApVb1BHhjW4np7pbs9VOXUPWXzC3/view?usp=sharing"
+              >
+                Descargar
+              </Button>
+              <iframe
+                className="w-32 h-10 ml-4 bg-primary"
+                title="72.Oficio de Ministerio de Trabajo"
+                src="https://es.scribd.com/embeds/707495888/content?start_page=1&view_mode=scroll&access_key=key-Llj1a8YGA9Eu2x1qwXLN"
+                scrolling="no"
+                id="doc_30856"
+              />
+            </>
           ) : (
             <>
-            {" "}
-            <Button
-              className="w-32 h-10 ml-4 bg-primary"
-              variant="primary"
-              target="_blank"
-              href="https://drive.google.com/file/d/1lEdAOGdwKsD0iRcxm1d8UFyfr8BZ4jQ7/view?usp=sharing"
-            >
-              Descargar
-            </Button>
-            <iframe
-              className="h-96 md:h-900"
-              title="NTC6072.Doc Centros de Formación y Entrenamiento en Proteccion Contra Caidas"
-              src="https://es.scribd.com/embeds/693184096/content?start_page=1&view_mode=scroll&access_key=key-8sj9ok5GjPTfI6DYLs6z"
-              scrolling="no"
-              id="doc_65826"
-            />
+              {" "}
+              <Button
+                className="w-32 h-10 ml-4 bg-primary"
+                variant="primary"
+                target="_blank"
+                href="https://drive.google.com/file/d/1lEdAOGdwKsD0iRcxm1d8UFyfr8BZ4jQ7/view?usp=sharing"
+              >
+                Descargar
+              </Button>
+              <iframe
+                className="h-96 md:h-900"
+                title="NTC6072.Doc Centros de Formación y Entrenamiento en Proteccion Contra Caidas"
+                src="https://es.scribd.com/embeds/693184096/content?start_page=1&view_mode=scroll&access_key=key-8sj9ok5GjPTfI6DYLs6z"
+                scrolling="no"
+                id="doc_65826"
+              />
             </>
           )}
         </div>

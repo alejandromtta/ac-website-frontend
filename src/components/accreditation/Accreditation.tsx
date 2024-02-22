@@ -50,7 +50,6 @@ const Accreditation = () => {
           </Button>
           <Button
             onClick={(e) => setDoc("Min")}
-            disabled
             className="w-40 h-10 bg-primary"
             variant="primary"
           >

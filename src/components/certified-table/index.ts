@@ -6,23 +6,27 @@ export const useColumns = (): any => {
     () => [
       {
         Header: "Id",
-        accessor: "id",
-      },
-      {
-        Header: "Numero de documento",
-        accessor: "document_number",
+        accessor: "id_local",
       },
       {
         Header: "Empleador",
-        accessor: "empleator",
+        accessor: "company_name",
       },
       {
         Header: "Nivel",
         accessor: "level",
       },
       {
+        Header: "Certificado",
+        accessor: "name_certificate",
+      },
+      {
         Header: "Fecha",
         accessor: "date",
+      },
+      {
+        Header: "Link Certificado",
+        accessor: "link",
       },
     ],
     []

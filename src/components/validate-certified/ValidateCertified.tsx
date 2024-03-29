@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CertifiedTable from "../certified-table/CertifiedTable";
 import { Button, Form, FormControl } from "react-bootstrap";
 import "./ValidateCertified.scss";
-import { dataFake } from "../certified-table";
+import axios from "axios";
 
 export default function ValidateCertified() {
   const [search, setSearch] = useState("");
@@ -10,12 +10,15 @@ export default function ValidateCertified() {
   const [isSearch, isSetSearch] = useState<any>(false);
   const onChangeData = (value: any): any => {
     setData(
-      dataFake?.filter(
-        (e: any): any => e?.document_number?.toString() === value
-      ) || []
-    );
+    //   dataFake?.filter(
+    //     (e: any): any => e?.document_number?.toString() === value
+    //   ) || []
+    // );
+    axios
+    .get(`https://fn-back.vercel.app/api/clients/document/${value}`)
+    .then((response) => setData(response?.data)).catch((err) => console.log(err)))
   };
- 
+console.log(data)
   return (
     <div className="validateCertified">
       <div className="w-11/12 pb-2 m-auto border-b-4 border-orange">
@@ -55,19 +58,19 @@ export default function ValidateCertified() {
           Search
         </Button>
       </Form>
-      {!!data.length && (
+      {data?.name && (
         <>
           {" "}
           <div className="flex flex-col mt-10 ml-10 md:ml-20">
-            <p className="font-bold">Nombre: {data && data[0]?.name}</p>
+            <p className="font-bold">Nombre: {data && data?.name}</p>
             <p className="font-bold">
-              Numero de documento: {data && data[0]?.document_number}
+              Numero de documento: {data && data?.document_number}
             </p>
           </div>
-          <CertifiedTable data={data} />
+          <CertifiedTable data={data?.certified} />
         </>
       )}
-      {isSearch && !data.length && (
+      {isSearch && !data?.name && (
         <p className="mt-4 text-2xl text-center text-bold">
           {" "}
           No se han encontrado registros para este documento.{" "}

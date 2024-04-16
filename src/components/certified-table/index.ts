@@ -17,10 +17,6 @@ export const useColumns = (): any => {
         accessor: "level",
       },
       {
-        Header: "Certificado",
-        accessor: "name_certificate",
-      },
-      {
         Header: "Fecha",
         accessor: "date",
       },

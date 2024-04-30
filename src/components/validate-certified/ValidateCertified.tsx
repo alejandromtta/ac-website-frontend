@@ -46,7 +46,6 @@ console.log(data)
           onChange={(e) => {
             setSearch(e.target.value);
           }}
-          disabled
         />
         <Button
           className="text-white bg-primary"

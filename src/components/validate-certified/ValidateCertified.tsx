@@ -10,6 +10,7 @@ export default function ValidateCertified() {
   const [isSearch, isSetSearch] = useState<any>(false);
   const onChangeData = (value: any): any => {
     setData(
+      //** Data to prove the form
     //   dataFake?.filter(
     //     (e: any): any => e?.document_number?.toString() === value
     //   ) || []
@@ -18,7 +19,7 @@ export default function ValidateCertified() {
     .get(`https://fn-back.vercel.app/api/clients/document/${value}`)
     .then((response) => setData(response?.data)).catch((err) => console.log(err)))
   };
-console.log(data)
+
   return (
     <div className="validateCertified">
       <div className="w-11/12 pb-2 m-auto border-b-4 border-orange">

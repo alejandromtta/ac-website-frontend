@@ -30,8 +30,7 @@ const Products = () => {
     <div className="flex flex-col w-full pl-10 pr-10 ">
       <div className="w-11/12 pb-2 m-auto border-b-4 border-orange">
         <p className="mt-10 ml-20 text-3xl text-gray-500">
-          {" "}
-          Productos y Servicios{" "}
+          Productos y Servicios
         </p>
       </div>
       <div
@@ -60,7 +59,7 @@ const Products = () => {
       <div className="flex flex-col-reverse items-center justify-center align-middle mb-7 md:flex-row space-between space-x-11">
         <img
           src={currentInfo.src || defaultImg}
-          className="h-[18.75rem] w-[18.75rem] md:h-[31.25rem] md:w-[31.25rem] md:w-bg-cover shadow-lg product-img"
+          className="h-[18.75rem] w-[18.75rem] md:h-[31.25rem] md:w-[31.25rem] object-scale-down shadow-lg product-img"
           alt="alturas y confinados ac"
         />
         <div className="flex flex-col">

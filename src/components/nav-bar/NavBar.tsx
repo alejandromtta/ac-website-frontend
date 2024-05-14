@@ -44,6 +44,24 @@ const NavBar: REACT.FC = () => {
                 <NavDropdown.Item
                   href={`${
                     pathname.includes("products")
+                      ? "CONFINADE"
+                      : "products/CONFINADE"
+                  }`}
+                >
+                  Espacios confinados
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
+                      ? "MEDICAL"
+                      : "products/MEDICAL"
+                  }`}
+                >
+                  Examenes Medicos
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href={`${
+                    pathname.includes("products")
                       ? "DOCUMENTATION"
                       : "products/DOCUMENTATION"
                   }`}
@@ -82,6 +100,7 @@ const NavBar: REACT.FC = () => {
                       : "products/SECURITY"
                   }`}
                 >
+                  
                   Equipos de Seguridad
                 </NavDropdown.Item>
               </NavDropdown>
